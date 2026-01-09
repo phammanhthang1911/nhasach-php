@@ -1,0 +1,88 @@
+/* =======================
+   BACKGROUND ẤM VINTAGE
+   ======================= */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../picture/trangchu.png"); /* dùng cùng ảnh nền của trang chủ */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Lớp phủ cho dễ đọc */
+.page-overlay {
+    min-height: 100vh;
+    background: rgba(20, 10, 5, 0.6); /* ấm + tối nhẹ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* =======================
+   KHUNG ĐĂNG NHẬP
+   ======================= */
+.login-container {
+    width: 350px;
+    padding: 30px;
+    background-color: rgba(255, 247, 230, 0.95); /* màu kem ấm */
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    border: 1px solid #f5e0c8;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5a2f1a;
+}
+
+.login-container label {
+    display: block;
+    margin-top: 10px;
+    color: #5a2f1a;
+    font-weight: bold;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #d9b894;
+    background-color: #fff;
+}
+
+/* =======================
+   NÚT ĐĂNG NHẬP
+   ======================= */
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #b36b3f; /* nâu cam giống trang chủ */
+    color: #fff7e6;
+    border: 2px solid #f5e0c8;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.login-container button:hover {
+    background-color: #f5e0c8;
+    color: #5a2f1a;
+}
+
+/* Link đăng ký */
+.login-container p a {
+    color: #b36b3f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,87 @@
+        /* Lớp phủ cho chữ dễ đọc hơn */
+        .page-overlay {
+            min-height: 100vh;
+            background: rgba(20, 10, 5, 0.6); /* phủ ấm, hơi tối */
+        }
+
+        /* NAVBAR ấm màu gỗ */
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* menu trái, user info phải */
+            align-items: center;
+            background-color: rgba(80, 40, 20, 0.9); /* nâu ấm */
+            padding: 10px 20px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-menu a {
+            display: block;
+            padding: 10px 20px;
+            background-color: #b36b3f; /* nâu cam ấm */
+            color: #fff7e6;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            border: 2px solid #f5e0c8;
+            transition: all 0.2s;
+        }
+
+        .nav-menu a:hover {
+            background-color: #f5e0c8;
+            color: #5a2f1a;
+        }
+
+        /* User + nút Profile / Logout */
+        .nav-user {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-profile,
+        .btn-logout {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            border: 2px solid #f5e0c8;
+            transition: 0.2s;
+        }
+
+        .btn-profile {
+            background-color: #d29b5b;
+            color: #2c160c;
+        }
+
+        .btn-profile:hover {
+            background-color: #f5e0c8;
+            color: #5a2f1a;
+        }
+
+        .btn-logout {
+            background-color: #b23b3b;
+            color: #fff7e6;
+        }
+
+        .btn-logout:hover {
+            background-color: #f5e0c8;
+            color: #b23b3b;
+        }
+
+body {
+    background-image: url("../picture/trangchu.png"); /* đổi đúng tên ảnh */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* không bắt buộc */
+}
+
+
+
+
+

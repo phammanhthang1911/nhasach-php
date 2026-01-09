@@ -1,0 +1,109 @@
+/* Nền chung – dùng lại ảnh nhà sách */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../picture/trangchu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.page-overlay {
+    min-height: 100vh;
+    background: rgba(20, 10, 5, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Khung profile */
+.profile-container {
+    width: 420px;
+    max-width: 95%;
+    padding: 30px 35px;
+    background-color: rgba(255, 247, 230, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    border: 1px solid #f5e0c8;
+}
+
+.profile-container h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #5a2f1a;
+}
+
+/* Dòng thông tin */
+.profile-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.profile-row .label {
+    color: #5a2f1a;
+    font-weight: bold;
+}
+
+.profile-row .value {
+    color: #3b2416;
+}
+
+.profile-row .value.highlight {
+    color: #b23b3b;
+    font-weight: bold;
+}
+
+/* Thông báo */
+.notify {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #b23b3b;
+}
+
+/* Nút hành động */
+.profile-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn-topup,
+.btn-back {
+    flex: 1;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #f5e0c8;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Nút nạp tiền */
+.btn-topup {
+    background-color: #b36b3f;
+    color: #fff7e6;
+}
+
+.btn-topup:hover {
+    background-color: #f5e0c8;
+    color: #5a2f1a;
+}
+
+/* Nút quay lại */
+.btn-back {
+    background-color: #f5e0c8;
+    color: #5a2f1a;
+    display: inline-block;
+    line-height: 1.4;
+}
+
+.btn-back:hover {
+    background-color: #e3c9a4;
+}

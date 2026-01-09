@@ -1,0 +1,17 @@
+# OS/IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Git
+.git/
+
+# Logs/temp
+*.log
+tmp/
+cache/
+
+# Env/secrets
+.env
+.env.*

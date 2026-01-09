@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../picture/trangchu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.page-overlay {
+    min-height: 100vh;
+    background: rgba(20, 10, 5, 0.6);
+    padding: 30px 10px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: rgba(255, 247, 230, 0.98);
+    border-radius: 12px;
+    padding: 20px 25px 30px;
+    border: 1px solid #f3d7b5;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+h2 {
+    color: #5a2f1a;
+    margin-top: 0;
+}
+
+.btn-back {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 8px 14px;
+    background-color: #b36b3f;
+    color: #fff7e6;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+    font-size: 13px;
+}
+
+.btn-back:hover {
+    background-color: #8c4f2f;
+}
+
+/* CARD ĐƠN HÀNG */
+.order-card {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #f0d3b0;
+    padding: 12px 14px 14px;
+    margin-bottom: 14px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.order-label {
+    font-weight: bold;
+    color: #5a2f1a;
+    font-size: 13px;
+}
+
+.order-value {
+    font-size: 13px;
+    color: #5a2f1a;
+}
+
+.order-status {
+    font-size: 13px;
+    font-weight: bold;
+    color: #155724;
+}
+
+.order-summary {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #5a2f1a;
+}
+
+/* BẢNG SÁCH TRONG ĐƠN */
+.order-items {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.order-items th,
+.order-items td {
+    padding: 7px 5px;
+    border: 1px solid #e0c9a9;
+    font-size: 12px;
+}
+
+.order-items th {
+    background-color: #f5e0c8;
+    color: #5a2f1a;
+}
+/* ====== PHÂN TRANG LỊCH SỬ ====== */
+.pagination {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+}
+
+.page-link {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #d4b89c;
+    background-color: #fff7e6;
+    text-decoration: none;
+    color: #5a2f1a;
+    font-size: 13px;
+}
+
+.page-link:hover {
+    background-color: #f0d3b0;
+}
+
+.page-link.active {
+    background-color: #b36b3f;
+    color: #fff7e6;
+    border-color: #b36b3f;
+    font-weight: bold;
+}
+

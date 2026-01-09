@@ -1,0 +1,308 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../picture/trangchu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.page-overlay {
+    min-height: 100vh;
+    background: rgba(20, 10, 5, 0.6);
+    padding: 30px 10px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: rgba(255, 247, 230, 0.98);
+    border-radius: 12px;
+    padding: 20px 25px 30px;
+    border: 1px solid #f3d7b5;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+h2, h3 {
+    color: #5a2f1a;
+    margin-top: 0;
+}
+
+.msg {
+    background-color: #fff3cd;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: #856404;
+    margin-bottom: 12px;
+}
+
+/* --------- FILTER (TÌM KIẾM) --------- */
+.filter-wrapper {
+    margin-bottom: 12px;
+}
+
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.filter-form input[type="text"],
+.filter-form select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: 1px solid #d4b89c;
+    font-size: 13px;
+}
+
+.filter-form button {
+    padding: 7px 12px;
+    background-color: #b36b3f;
+    color: #fff7e6;
+    border-radius: 5px;
+    border: 2px solid #f0d3b0;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.filter-form button:hover {
+    background-color: #f0d3b0;
+    color: #5a2f1a;
+}
+
+.btn-reset {
+    padding: 7px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #555;
+    background-color: #f8f9fa;
+    font-size: 13px;
+}
+
+/* --------- FORM CARD (THÊM / SỬA) --------- */
+.form-wrapper {
+    margin-bottom: 20px;
+    padding: 15px 18px;
+    background-color: rgba(255, 247, 230, 0.98);
+    border-radius: 10px;
+    border: 1px solid #f3d7b5;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.form-wrapper h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #5a2f1a;
+    border-bottom: 1px solid #f0d3b0;
+    padding-bottom: 5px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.form-col {
+    flex: 1;
+    min-width: 150px;
+}
+
+.form-col label {
+    display: block;
+    font-weight: bold;
+    color: #5a2f1a;
+    margin-bottom: 3px;
+    font-size: 13px;
+}
+
+.form-col input,
+.form-col select {
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #d4b89c;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+.form-actions {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-actions button {
+    padding: 9px 14px;
+    background-color: #b36b3f;
+    color: #fff7e6;
+    border-radius: 5px;
+    border: 2px solid #f0d3b0;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.form-actions button:hover {
+    background-color: #f0d3b0;
+    color: #5a2f1a;
+}
+
+.btn-cancel {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #555;
+    background-color: #f8f9fa;
+    font-size: 13px;
+}
+
+/* --------- BẢNG SÁCH --------- */
+.table-wrapper {
+    margin-top: 10px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 8px 6px;
+    border: 1px solid #e0c9a9;
+    font-size: 13px;
+}
+
+th {
+    background-color: #f5e0c8;
+    color: #5a2f1a;
+}
+
+.btn-small {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 4px;
+    color: #fff;
+}
+
+.btn-small.edit {
+    background-color: #007bff;
+}
+
+.btn-small.delete {
+    background-color: #b23b3b;
+}
+
+/* --------- TRẠNG THÁI SÁCH --------- */
+.status-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status-active {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-out {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-deleted {
+    background-color: #f8d7da;
+    color: #721c24;
+    text-decoration: line-through;
+}
+
+/* --------- PHÂN TRANG --------- */
+.pagination {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+}
+
+.page-link {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #d4b89c;
+    background-color: #fff7e6;
+    text-decoration: none;
+    color: #5a2f1a;
+    font-size: 13px;
+}
+
+.page-link:hover {
+    background-color: #f0d3b0;
+}
+
+.page-link.active {
+    background-color: #b36b3f;
+    color: #fff7e6;
+    border-color: #b36b3f;
+    font-weight: bold;
+}
+.btn-back {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 8px 14px;
+    background-color: #b36b3f;
+    color: #fff7e6;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-back:hover {
+    background-color: #8c4f2f;
+}
+/* Hàng nút đồng bộ */
+.sync-bar {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    justify-content: flex-start; /* hoặc center nếu muốn căn giữa */
+}
+
+/* Style nút sync */
+.btn-sync {
+    display: inline-block;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: #fff !important;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.25s;
+    border: 1px solid #1B5E20;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+.btn-sync:hover {
+    background: linear-gradient(135deg, #66BB6A, #388E3C);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.btn-sync:active {
+    transform: scale(0.97);
+}
+

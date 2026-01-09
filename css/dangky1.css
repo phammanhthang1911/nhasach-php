@@ -1,0 +1,102 @@
+ /* Background ấm giống trang chủ */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+           background-image: url("../picture/trangchu.png"); /* đổi đúng tên ảnh */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Lớp phủ giúp chữ dễ đọc hơn */
+        .page-overlay {
+            min-height: 100vh;
+            background: rgba(20, 10, 5, 0.6); /* hơi tối + ấm */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Khung đăng ký */
+        .register-container {
+            background: rgba(255, 247, 230, 0.95); /* màu kem ấm */
+            padding: 30px 40px;
+            border-radius: 12px;
+            max-width: 420px;
+            width: 100%;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            border: 1px solid #f5e0c8;
+        }
+
+        .register-container h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #5a2f1a;
+        }
+
+        .register-container label {
+            display: block;
+            margin-bottom: 6px;
+            color: #5a2f1a;
+            font-weight: bold;
+        }
+
+        .register-container input[type="text"],
+        .register-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #d9b894;
+            box-sizing: border-box;
+        }
+
+        .register-container button[type="submit"] {
+            width: 100%;
+            padding: 10px 0;
+            background-color: #b36b3f; /* nâu cam ấm */
+            color: #fff7e6;
+            border: 2px solid #f5e0c8;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .register-container button[type="submit"]:hover {
+            background-color: #f5e0c8;
+            color: #5a2f1a;
+        }
+
+        .register-container p {
+            text-align: center;
+            margin-top: 15px;
+            color: #5a2f1a;
+        }
+
+        .register-container a {
+            color: #b36b3f;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .register-container a:hover {
+            text-decoration: underline;
+        }
+
+        /* Thông báo */
+        .message {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .message.error {
+            color: #b23b3b;
+        }
+
+        .message.success {
+            color: #2c7a3f;
+        }

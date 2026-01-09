@@ -1,0 +1,99 @@
+/* css/danhsachsinhvien.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h2, h3 {
+    color: #007bff;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input, select {
+    padding: 5px;
+    margin: 5px;
+}
+.btn-trangchu {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-trangchu:hover {
+    background-color: #0056b3;
+}
+
+.form-them {
+    background-color: #f0f8ff; /* màu nền khác để tách form */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    width: 100%; /* tùy chỉnh độ rộng */
+}
+
+.form-them h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    display: inline-block;
+    width: 100px;
+}
+
+.form-row input, 
+.form-row select {
+    width: 250px;
+    padding: 5px;
+}
+.btn-xuat {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.btn-xuat:hover {
+    background-color: #218838;
+}

@@ -1,0 +1,217 @@
+/* ====== NỀN VÀ KHUNG CHUNG ====== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../picture/trangchu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.page-overlay {
+    min-height: 100vh;
+    background: rgba(20, 10, 5, 0.6);
+    padding: 30px 10px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: rgba(255, 247, 230, 0.98);
+    border-radius: 12px;
+    padding: 20px 25px 30px;
+    border: 1px solid #f3d7b5;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+h2, h3 {
+    color: #5a2f1a;
+    margin-top: 0;
+}
+
+.msg {
+    background-color: #fff3cd;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: #856404;
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+/* ====== NÚT QUAY LẠI & GIỎ HÀNG ====== */
+.btn-back,
+.btn-cart {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 8px 14px;
+    background-color: #b36b3f;
+    color: #fff7e6;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+    font-size: 13px;
+}
+
+.btn-cart {
+    float: right;
+}
+
+.btn-back:hover,
+.btn-cart:hover {
+    background-color: #8c4f2f;
+}
+
+/* Clear float */
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ====== FILTER (TÌM KIẾM) ====== */
+.filter-wrapper {
+    margin-bottom: 12px;
+    margin-top: 5px;
+}
+
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.filter-form input[type="text"],
+.filter-form select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: 1px solid #d4b89c;
+    font-size: 13px;
+    background-color: #fff;
+}
+
+.filter-form button {
+    padding: 7px 12px;
+    background-color: #b36b3f;
+    color: #fff7e6;
+    border-radius: 5px;
+    border: 2px solid #f0d3b0;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.filter-form button:hover {
+    background-color: #f0d3b0;
+    color: #5a2f1a;
+}
+
+.btn-reset {
+    padding: 7px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #555;
+    background-color: #f8f9fa;
+    font-size: 13px;
+}
+
+/* ====== BẢNG DANH SÁCH SÁCH ====== */
+.table-wrapper {
+    margin-top: 10px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 8px 6px;
+    border: 1px solid #e0c9a9;
+    font-size: 13px;
+}
+
+th {
+    background-color: #f5e0c8;
+    color: #5a2f1a;
+}
+
+/* ====== NÚT HÀNH ĐỘNG (ĐẶT MƯỢN / HẾT HÀNG) ====== */
+.btn-small {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 4px;
+    color: #fff;
+    border: none;
+}
+
+.btn-small.order {
+    background-color: #28a745; /* xanh đặt mượn */
+}
+
+.btn-small.order:hover {
+    background-color: #218838;
+}
+
+.btn-small.disabled {
+    background-color: #b0b0b0;
+    cursor: not-allowed;
+    color: #f8f9fa;
+}
+
+/* ====== TRẠNG THÁI SÁCH ====== */
+.status-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status-active {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-out {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+/* ====== PHÂN TRANG ====== */
+.pagination {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+}
+
+.page-link {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #d4b89c;
+    background-color: #fff7e6;
+    text-decoration: none;
+    color: #5a2f1a;
+    font-size: 13px;
+}
+
+.page-link:hover {
+    background-color: #f0d3b0;
+}
+
+.page-link.active {
+    background-color: #b36b3f;
+    color: #fff7e6;
+    border-color: #b36b3f;
+    font-weight: bold;
+}

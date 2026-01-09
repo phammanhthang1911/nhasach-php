@@ -1,0 +1,292 @@
+/* ====== NỀN & CONTAINER ====== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../picture/trangchu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.page-overlay {
+    min-height: 100vh;
+    background: rgba(20, 10, 5, 0.6);
+    padding: 30px 10px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: rgba(255, 247, 230, 0.98);
+    border-radius: 12px;
+    padding: 20px 25px 30px;
+    border: 1px solid #f3d7b5;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+h2 {
+    color: #5a2f1a;
+    margin-top: 0;
+}
+
+/* ====== MESSAGE & BALANCE ====== */
+.msg {
+    background-color: #fff3cd;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: #856404;
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+.balance {
+    font-size: 14px;
+    margin: 5px 0 10px;
+    color: #5a2f1a;
+}
+
+/* ====== NÚT QUAY LẠI ====== */
+.btn-back {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 8px 14px;
+    background-color: #b36b3f;
+    color: #fff7e6;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+    font-size: 13px;
+}
+
+.btn-back:hover {
+    background-color: #8c4f2f;
+}
+
+/* ====== TABLE ====== */
+.table-wrapper {
+    margin-top: 15px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 9px 6px;
+    border: 1px solid #e0c9a9;
+    font-size: 13px;
+}
+
+th {
+    background-color: #f5e0c8;
+    color: #5a2f1a;
+}
+
+/* ====== INPUT SỐ LƯỢNG ====== */
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #d4b89c;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* ====== NÚT XÓA NHỎ ====== */
+.btn-small {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+    transition: 0.1s;
+}
+
+.btn-small.delete {
+    background-color: #b23b3b;
+}
+
+.btn-small.delete:hover {
+    background-color: #8e2e2e;
+}
+
+/* ====== TỔNG TIỀN ====== */
+.total-box {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #5a2f1a;
+}
+
+/* ====== BOX XÁC NHẬN ĐẶT MƯỢN ====== */
+.confirm-box {
+    margin-top: 12px;
+    padding: 10px 12px;
+    background-color: #fff7e6;
+    border-radius: 8px;
+    border: 1px solid #f0d3b0;
+}
+
+.confirm-box h3 {
+    margin: 0 0 6px;
+    color: #5a2f1a;
+    font-size: 14px;
+}
+
+.confirm-box p {
+    margin: 2px 0;
+    font-size: 13px;
+    color: #5a2f1a;
+}
+
+.confirm-status.success {
+    color: #155724;
+}
+
+.confirm-status.warning {
+    color: #856404;
+}
+
+/* ====== HÀNG NÚT HÀNH ĐỘNG ====== */
+.cart-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.cart-actions button {
+    padding: 9px 14px;
+    background-color: #b36b3f;
+    color: #fff7e6;
+    border-radius: 5px;
+    border: 2px solid #f0d3b0;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+/* Cập nhật & xác nhận (mặc định) */
+.cart-actions button:hover {
+    background-color: #f0d3b0;
+    color: #5a2f1a;
+}
+
+/* Nút clear */
+.cart-actions button[name="action"][value="clear"] {
+    background-color: #b23b3b;
+    border-color: #e4bbbb;
+}
+
+.cart-actions button[name="action"][value="clear"]:hover {
+    background-color: #d66;
+    color: white;
+}
+
+/* Nút xác nhận mở popup */
+#btnOpenModal {
+    background-color: #2b8a3e;
+    border-color: #bad7c2;
+}
+
+#btnOpenModal:hover {
+    background-color: #3ebd53;
+    color: #fff;
+}
+
+/* Nút nạp tiền */
+.btn-topup {
+    display: inline-block;
+    padding: 9px 14px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #bcd5f5;
+    transition: 0.2s;
+}
+
+.btn-topup:hover {
+    background-color: #5398ff;
+    color: #fff;
+}
+
+/* ====== POPUP XÁC NHẬN THANH TOÁN ====== */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-box {
+    background: #fff7e6;
+    border-radius: 10px;
+    padding: 18px 20px;
+    border: 1px solid #f0d3b0;
+    max-width: 380px;
+    width: 90%;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    text-align: center;
+}
+
+.modal-box h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #5a2f1a;
+}
+
+.modal-box p {
+    margin: 4px 0;
+    font-size: 13px;
+    color: #5a2f1a;
+}
+
+.modal-actions {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-confirm-final {
+    padding: 8px 14px;
+    border-radius: 5px;
+    border: 2px solid #bad7c2;
+    background-color: #2b8a3e;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-confirm-final:hover {
+    background-color: #3ebd53;
+}
+
+.btn-cancel-modal {
+    padding: 8px 14px;
+    border-radius: 5px;
+    border: 1px solid #e30d0d;
+    background-color: #d51818;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btn-cancel-modal:hover {
+    background-color: #e2e6ea;
+}
