@@ -1,6 +1,6 @@
 <?php
 session_start();
-require '../connection.php'; // kết nối MongoDB
+require __DIR__ . '/../connection.php'; // kết nối MongoDB
 
 // Chặn người chưa đăng nhập
 if (empty($_SESSION['user_id'])) {

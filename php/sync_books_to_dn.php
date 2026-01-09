@@ -3,7 +3,7 @@ session_start();
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-require '../connection.php'; // Kết nối MongoDB TRUNG TÂM
+require __DIR__ . '/../connection.php';// Kết nối MongoDB TRUNG TÂM
 
 use MongoDB\BSON\ObjectId;
 

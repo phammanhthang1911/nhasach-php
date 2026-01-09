@@ -1,6 +1,6 @@
 <?php
 session_start();
-require '../connection.php';
+require __DIR__ . '/../connection.php';
 
 use MongoDB\BSON\Regex;
 

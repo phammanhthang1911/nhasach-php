@@ -1,6 +1,7 @@
 <?php
 session_start();
-require '../connection.php'; // file kết nối MongoDB
+require __DIR__ . '/../connection.php';
+ // file kết nối MongoDB
 
 $message = "";
 

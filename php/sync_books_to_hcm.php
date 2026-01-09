@@ -1,6 +1,6 @@
 <?php
 session_start();
-require '../connection.php'; // Kết nối MongoDB TRUNG TÂM
+require __DIR__ . '/../connection.php'; // Kết nối MongoDB TRUNG TÂM
 
 use MongoDB\BSON\ObjectId;
 
