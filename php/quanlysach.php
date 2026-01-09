@@ -1,6 +1,6 @@
 <?php
 session_start();
-require __DIR__ . '/../connection.php';
+require __DIR__ . '/../Connection.php';
 
 use MongoDB\BSON\ObjectId;
 use MongoDB\BSON\UTCDateTime;
