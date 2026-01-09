@@ -38,8 +38,15 @@ jobs:
       - name: Apply manifests
         run: |
           kubectl apply -f k8s/app.yaml
-
+          kubectl apply --validate=false -f k8s/app.yaml
+          
       - name: Update image & rollout
         run: |
           kubectl set image deployment/nhasach-php app=ghcr.io/${{ github.repository }}:${{ github.sha }}
           kubectl rollout status deployment/nhasach-php
+      - name: Verify kube access
+        run: |
+          kubectl config current-context
+          kubectl get deploy -n default
+      
+
